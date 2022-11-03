@@ -3,7 +3,6 @@
 /* Подключение текста */
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
 
 /*Обнуление*/
 * {
@@ -46,7 +45,6 @@ input, button, textarea {
 input::-ms-clear {
   display: none;
 }
-
 button {
   cursor: pointer;
 }
@@ -160,106 +158,6 @@ html, body {
     color: #FFFFFE;
   }
 
-.our_contact{
-  padding: 7% 0 1% 0;
-  text-align: center;
-  font-size: 50px;
-  color: 41543E;
-  font-family: "Arapey", sans-serif;
-}
-
-.stroka1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid;
-  width:100%;
-
-}
-.text1, .text4 {
-  letter-spacing: 0,5px;
-  font-size: 34px;
-  color: #000000;
-  font-family: "Arapey", sans-serif;
-  padding: 0 0 3% 8%;
-}
-
-.text2{
-  letter-spacing: 0,5px;
-  font-size: 34px;
-  color: #000000;
-  font-family: "Arial", sans-serif;
-  padding: 0 0 3% 8%;
-}
-
-.text3{
-  letter-spacing: 0,5px;
-  font-size: 34px;
-  color: #000000;
-  font-family: "Comfortaa", sans-serif;
-  padding: 0 0 3% 8%;
-}
-
-
-
-.all_elements span{
-  
-  letter-spacing: 0,5px;
-  font-size: 34px;
-  color: #000000;
-  font-family: "Comfortaa", sans-serif;
- 
-
-  }
-
-  .all_elements img{
-  
-    height: 49px;
-    width: 49px;
-
-  }
-
-
-.all_elements{
- 
-  display:flex;
-  flex-direction:column;
-  justify-content: space-around;
-  align-items:flex-start;
-  
-  height: 550px;
-  width: 700px;
-  margin: 0 0 3% 30%;
-  padding: 2% 0 2% 0;
-}
-
-.stroka1, .stroka2, .stroka3, .stroka4 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border-bottom: 2px solid;
-  width:110%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .footer {
     background-color: #B3DEAB;
   }
@@ -291,4 +189,22 @@ html, body {
     padding: 10px;
     background-color: #6C9E67;
     color: #FFFFFE;
+  }
+  #top_block {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 700px;
+    font-size: 30px;
+    font-family: "Kodchasan", sans-serif;
+color: grey;
+  }
+  #profile {
+    width: 219px;
+    height: 186px;
+    border-radius: 80px;
+    background-color: grey;
+    margin-left: 40px;
+
   }
