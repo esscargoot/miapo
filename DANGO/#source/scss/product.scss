@@ -1,0 +1,80 @@
+/*Продукт----------*/ 
+.protit {
+
+
+    &__body {
+        height: 50px;
+        width: 1800px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-bottom: 1px solid #6A7668;
+    }
+
+    &__text {
+        font-size: 35px;
+    }
+}
+
+.products {
+    margin: 100px;
+
+    &__body {
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    &__element {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__img {
+        margin: 0 auto;
+        height: 271px;
+        width: 248px;
+        background-color: wheat;
+    }
+
+    &__text {
+        width: 350px;
+        height: 60px;
+        margin: 10px 0px;
+        font-size: 24px;
+        color: #000;
+    }
+
+    &__price {
+        margin: 10px 0px;
+        font-size: 36px;
+        color: #000;
+    }
+
+    &__textp{
+        text-align: center;
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+
+    &__bbutton {
+        width: 183px;
+        height: 52px;
+        border-radius: 65px;
+        background-color: #6c9e67;
+        font-size: 32px;
+        color: #fff;
+    }
+
+    &__hbutton {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+/*--------------------*/ 
