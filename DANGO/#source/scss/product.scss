@@ -77,4 +77,13 @@
     }
 }
 
+@media (max-width:1364px){
+    .products{
+        &__row {
+            flex-wrap: wrap;
+        }
+    
+    }
+}
+
 /*--------------------*/ 

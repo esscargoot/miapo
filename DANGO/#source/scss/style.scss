@@ -4,6 +4,12 @@
 // Импорт стайла страницы продуктов
 @import "./product.scss";
 
+//Страница аккаунта
+@import "./account.scss";
+
+//Страница Контактов
+@import "./Contact.scss";
+
 //Шрифты
 @import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@600&display=swap');
 //font-family: 'Kodchasan', sans-serif;
@@ -30,6 +36,30 @@ html,body{
 .container {
       max-width: 1800px;
       margin: 0px auto;
+}
+
+@media (max-width:1870px){
+      .container {
+            max-width: 1700px;
+      }
+}
+
+@media (max-width:1780px){
+      .container {
+            max-width: 1600px;
+      }
+}
+
+@media (max-width:1680px){
+      .container {
+            max-width: 1400px;
+      }
+}
+
+@media (max-width:1480px){
+      .container {
+            max-width: 1200px;
+      }
 }
 
 .content{
@@ -189,6 +219,46 @@ html,body{
       }
 }
 
+@media (max-width:1780px){
+      
+      .slider{
+            height: 466px;
+            width: 1356px; 
+
+            &__item{
+                  height: 466px;
+                  width: 1356px;  
+            }
+
+            &__textosn {
+                  font-size: 40px;
+            }
+      
+            &__textosn span{
+                  font-weight: 700;
+            }
+      
+            &__text{
+                  font-size: 26px;
+            }
+      
+            &__img1{
+                  height: 230px;
+                  width: 240px;
+            }
+      
+            &__img2{
+                  height: 200px;
+                  width: 278px;
+            }
+      
+            &__img3{
+                  height: 178px;
+                  width: 178px;
+            }
+      }
+}
+
 .slider .slick-arrow{
       position: absolute;
       top: 50%;
@@ -286,7 +356,7 @@ html,body{
       }
 
       &__pola input{
-            margin-top: 90px;
+            margin-top: 13%;
 
             display: flex;
             flex-direction: column;
@@ -299,7 +369,7 @@ html,body{
       }
 
       &__button{
-            margin-top: 80px;
+            margin-top: 10%;
 
             background-color: #6A7668;
             border-radius: 65px;
@@ -308,6 +378,39 @@ html,body{
             color: #FFFFFE;
       }
 
+}
+
+@media (max-width:1780px){
+      .emailpod {
+            width: 999px;
+            height: 567px;
+      
+            margin: 100px auto;
+      
+            &__text {
+                  margin-top: 70px;
+                  font-size: 25px;
+            }
+      
+            &__pola input{
+                  margin-top: 10%;
+      
+                  font-size: 15px;
+                  height: 60px;
+                  width: 699px;
+            }
+      
+            &__button{
+                  margin-top: 10%;
+      
+                  background-color: #6A7668;
+                  border-radius: 65px;
+                  height: 68px;
+                  width: 203px;
+                  color: #FFFFFE;
+            }
+      
+      }
 }
 
 
