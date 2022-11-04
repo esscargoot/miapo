@@ -579,6 +579,37 @@ html, body {
     width: 178px;
   }
 }
+@media (max-width: 1668px) {
+  .slider {
+    height: 400px;
+    width: 1200px;
+  }
+  .slider__item {
+    height: 400px;
+    width: 1200px;
+  }
+  .slider__textosn {
+    font-size: 40px;
+  }
+  .slider__textosn span {
+    font-weight: 700;
+  }
+  .slider__text {
+    font-size: 26px;
+  }
+  .slider__img1 {
+    height: 200px;
+    width: 220px;
+  }
+  .slider__img2 {
+    height: 180px;
+    width: 260px;
+  }
+  .slider__img3 {
+    height: 150px;
+    width: 150px;
+  }
+}
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
@@ -701,11 +732,31 @@ html, body {
   }
   .emailpod__button {
     margin-top: 10%;
-    background-color: #6A7668;
     border-radius: 65px;
     height: 68px;
     width: 203px;
-    color: #FFFFFE;
+  }
+}
+@media (max-width: 1668px) {
+  .emailpod {
+    width: 880px;
+    height: 500px;
+    margin: 100px auto;
+  }
+  .emailpod__text {
+    margin-top: 7%;
+    font-size: 23px;
+  }
+  .emailpod__pola input {
+    margin-top: 11%;
+    font-size: 15px;
+    height: 55px;
+    width: 630px;
+  }
+  .emailpod__button {
+    margin-top: 6%;
+    height: 57px;
+    width: 189px;
   }
 }
 .footer {
