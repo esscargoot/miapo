@@ -515,6 +515,7 @@ html, body {
 .slider__img1 {
   height: 271px;
   width: 279px;
+  border: 5px solid #c77675;
 }
 .slider__img2 {
   height: 267px;
