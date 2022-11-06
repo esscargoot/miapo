@@ -405,6 +405,7 @@ h3 {
 .text1 {
   display: flex;
   justify-content: center;
+  margin-right: 9%;
   margin-top: 7%;
   font-size: 30px;
 }
@@ -412,6 +413,7 @@ h3 {
 .text2 {
   display: flex;
   justify-content: center;
+  margin-right: 9%;
   margin-top: 5%;
   font-size: 30px;
 }
@@ -574,9 +576,12 @@ h3 {
   text-align: center;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1700px) {
   .tabs {
     margin-bottom: 6%;
+  }
+  input {
+    margin: 0 4%;
   }
 }
 html, body {

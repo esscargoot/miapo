@@ -19,16 +19,18 @@
 .text1
 {
   display: flex;
-justify-content: center;
-margin-top: 7%;
-font-size: 30px;
+  justify-content: center;
+  margin-right: 9%;
+  margin-top: 7%;
+  font-size: 30px;
 }
 .text2
 {
-display: flex;
-justify-content: center;
-margin-top: 5%;
-font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-right: 9%;
+  margin-top: 5%;
+  font-size: 30px;
 }
   .tabs_block 
   {
@@ -195,8 +197,12 @@ font-size: 30px;
   text-align: center;
 }
 
-@media (max-width:1600px){
+@media (max-width:1700px){
     .tabs{
       margin-bottom: 6%;
+    }
+
+    input{
+      margin: 0 4%;
     }
 }
