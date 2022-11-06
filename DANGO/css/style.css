@@ -792,3 +792,6 @@ html, body {
   background-color: #6C9E67;
   color: #FFFFFE;
 }
+.footer__text {
+  text-align: center;
+}
