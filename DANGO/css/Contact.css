@@ -1,3 +1,6 @@
+.contact{ 
+  margin-bottom:3%;
+}
 .our_contact {
   padding: 7% 0 1% 0;
   text-align: center;
@@ -56,5 +59,6 @@
   flex-direction: column;
   height: 550px;
   width: 700px;
-  margin-bottom: 10%;
+
+  margin-bottom:10%;
 }
