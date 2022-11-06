@@ -574,6 +574,11 @@ h3 {
   text-align: center;
 }
 
+@media (max-width: 1600px) {
+  .tabs {
+    margin-bottom: 6%;
+  }
+}
 html, body {
   height: 100%;
   font-family: "Comfortaa", cursive;
