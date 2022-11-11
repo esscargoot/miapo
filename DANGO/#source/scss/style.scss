@@ -360,7 +360,6 @@ html,body{
 .slick-dots li button{}
 
 .textv {
-      display: flex;
       text-align: center;
       margin-top: 100px;
 
@@ -412,8 +411,15 @@ html,body{
             width: 673px;
       }
 
+      &__cb{
+            display: flex;
+            align-items: center;
+            margin-top: 6%;
+            font-size: 22px;
+      }
+
       &__button{
-            margin-top: 10%;
+            margin-top: 8%;
 
             background-color: #6A7668;
             border-radius: 65px;
@@ -422,6 +428,47 @@ html,body{
             color: #FFFFFE;
       }
 
+      &__chesub{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      &__chesub input[type=checkbox] {
+            display:none;
+        }
+
+        &__chesub input[type=checkbox] + label {
+            position: relative;
+            cursor: pointer;
+        }
+        &__chesub input[type=checkbox] + label:hover {
+            color:#1b2719;
+        }
+        &__chesub input[type=checkbox] + label:before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            left: -6%;
+            border: 1px solid #808080;
+        }
+        &__chesub input[type=checkbox]:checked + label:before{
+            content: '\2714';
+            
+        }
+        &__chesub input[type=submit] {
+            cursor: pointer;
+            background-color: #6A7668;
+            transition: .4s all;
+        }
+        &__chesub input[type=submit]:hover {
+            background-color: #4f5a4d;
+        }
+        &__chesub input[disabled] {
+            opacity: .6;
+            cursor: not-allowed;
+        }
 }
 
 @media (max-width:1780px){
@@ -443,9 +490,15 @@ html,body{
                   height: 60px;
                   width: 699px;
             }
+
+            &__cb{
+                  white-space: nowrap;
+                  margin-top: 6%;
+                  font-size: 20px;
+            }
       
             &__button{
-                  margin-top: 10%;
+                  margin-top: 7%;
       
                   border-radius: 65px;
                   height: 68px;
@@ -473,6 +526,12 @@ html,body{
                   font-size: 15px;
                   height: 55px;
                   width: 630px;
+            }
+
+            &__cb{
+                  white-space: nowrap;
+                  margin-top: 6%;
+                  font-size: 18px;
             }
       
             &__button{

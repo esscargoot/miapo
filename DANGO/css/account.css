@@ -1,0 +1,181 @@
+#top_block {
+  height: 350px;
+  margin-top: 50px;
+  padding-bottom: 200px;
+  font-size: 30px;
+  font-family: "Kodchasan", sans-serif;
+  color: grey;
+}
+
+#profile {
+  width: 219px;
+  height: 186px;
+  border-radius: 80px;
+  background-color: #D4D4D4;
+  margin-left: 40px;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#user {
+  height: 39px;
+  width: 411px;
+  margin-left: 44px;
+  margin-top: 30px;
+  color: #4F654C;
+  border: 1px;
+  border-color: #4F654C;
+  font-weight: 200;
+}
+
+#profile img {
+  padding-top: 20px;
+}
+
+#hr {
+  margin-top: 50px;
+  padding-right: 100px;
+}
+
+#post {
+  height: 80px;
+  width: 100px;
+  background-color: #D4D4D4;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+#notice {
+  height: 80px;
+  width: 100px;
+  background-color: #D4D4D4;
+  border-radius: 30px;
+}
+
+.icons {
+  float: right;
+  margin-right: 50px;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+}
+
+#main_info, #settings {
+  margin-top: 10px;
+  width: 500px;
+  padding: 25px;
+  margin-left: 100px;
+  line-height: 50px;
+  color: black;
+}
+
+#bascket {
+  height: 940px;
+  width: 900px;
+  float: right;
+  background-color: #e9e9e9;
+  margin-right: 60px;
+  margin-top: 30px;
+}
+
+#bottom_block {
+  height: 1000px;
+  font-family: "Kodchasan", sans-serif;
+  font-size: 32px;
+}
+
+h3 {
+  float: center;
+  padding-top: 20px;
+}
+
+#bascket img {
+  width: 160px;
+  height: 160px;
+  margin-right: 100px;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+
+.bascket1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.bascket1 .img1_text {
+  text-align: left;
+}
+
+.img1_text {
+  padding: 0 30px 0 0;
+  flex: 0 1 50%;
+  margin-left: 100px;
+}
+
+.img1_image {
+  flex: 0 0 auto;
+}
+
+.bascket2 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.bascket2 .img2_text {
+  text-align: left;
+}
+
+.img2_text {
+  padding: 0 30px 0 0;
+  flex: 0 1 50%;
+  margin-left: 100px;
+}
+
+.img2_image {
+  flex: 0 0 auto;
+}
+
+.bascket3 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.bascket3 .img3_text {
+  text-align: left;
+}
+
+.img3_text {
+  padding: 0 30px 0 0;
+  flex: 0 1 50%;
+  margin-left: 100px;
+}
+
+.img3_image {
+  flex: 0 0 auto;
+}
+
+#summa {
+  padding-left: 80px;
+  margin-top: 80px;
+  text-decoration: underline;
+}
+
+#button {
+  width: 255px;
+  height: 68px;
+  background-color: rgb(79, 101, 76);
+  border-radius: 65px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+  position: absolute;
+  margin-left: 550px;
+}

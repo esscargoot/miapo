@@ -853,7 +853,6 @@ html, body {
 /* Активная точка */
 /* Элемент точки */
 .textv {
-  display: flex;
   text-align: center;
   margin-top: 100px;
 }
@@ -906,13 +905,57 @@ html, body {
   height: 68px;
   width: 673px;
 }
+.emailpod__cb {
+  display: flex;
+  align-items: center;
+  margin-top: 6%;
+  font-size: 22px;
+}
 .emailpod__button {
-  margin-top: 10%;
+  margin-top: 8%;
   background-color: #6A7668;
   border-radius: 65px;
   height: 68px;
   width: 203px;
   color: #FFFFFE;
+}
+.emailpod__chesub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.emailpod__chesub input[type=checkbox] {
+  display: none;
+}
+.emailpod__chesub input[type=checkbox] + label {
+  position: relative;
+  cursor: pointer;
+}
+.emailpod__chesub input[type=checkbox] + label:hover {
+  color: #1b2719;
+}
+.emailpod__chesub input[type=checkbox] + label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -6%;
+  border: 1px solid #808080;
+}
+.emailpod__chesub input[type=checkbox]:checked + label:before {
+  content: "✔";
+}
+.emailpod__chesub input[type=submit] {
+  cursor: pointer;
+  background-color: #6A7668;
+  transition: 0.4s all;
+}
+.emailpod__chesub input[type=submit]:hover {
+  background-color: #4f5a4d;
+}
+.emailpod__chesub input[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 @media (max-width: 1780px) {
@@ -931,8 +974,13 @@ html, body {
     height: 60px;
     width: 699px;
   }
+  .emailpod__cb {
+    white-space: nowrap;
+    margin-top: 6%;
+    font-size: 20px;
+  }
   .emailpod__button {
-    margin-top: 10%;
+    margin-top: 7%;
     border-radius: 65px;
     height: 68px;
     width: 203px;
@@ -953,6 +1001,11 @@ html, body {
     font-size: 15px;
     height: 55px;
     width: 630px;
+  }
+  .emailpod__cb {
+    white-space: nowrap;
+    margin-top: 6%;
+    font-size: 18px;
   }
   .emailpod__button {
     margin-top: 6%;
