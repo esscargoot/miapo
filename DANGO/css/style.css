@@ -723,7 +723,7 @@ html, body {
   font-size: 32px;
 }
 .popup__phone input{
-  margin-top: 5%;
+  margin-top: 3% auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
