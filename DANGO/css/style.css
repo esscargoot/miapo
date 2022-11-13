@@ -567,7 +567,9 @@ h3 {
   background: #D4D4D4;
 }
 
-.button1 {
+.tabs__button1 {
+  cursor: pointer;
+  color: #fff;
   width: 500px;
   height: 60px;
   border-radius: 60px;
@@ -584,6 +586,40 @@ h3 {
     margin: 0 4%;
   }
 }
+.tabs__reg input[type=checkbox] {
+  display: none;
+}
+.tabs__reg input[type=checkbox] + label {
+  position: relative;
+  cursor: pointer;
+}
+.tabs__reg input[type=checkbox] + label:hover {
+  color: #1b2719;
+}
+.tabs__reg input[type=checkbox] + label:before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -6%;
+  border: 1px solid #5f5858;
+}
+.tabs__reg input[type=checkbox]:checked + label:before {
+  content: "✔";
+}
+.tabs__reg input[type=submit] {
+  cursor: pointer;
+  background-color: #6A7668;
+  transition: 0.4s all;
+}
+.tabs__reg input[type=submit]:hover {
+  background-color: #4f5a4d;
+}
+.tabs__reg input[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 html, body {
   height: 100%;
   font-family: "Comfortaa", cursive;
