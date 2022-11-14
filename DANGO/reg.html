@@ -63,33 +63,34 @@
                         </div>
                         </div>
                             <div id="tab_02" class="tabs_block">
-                                <form >
+                                <form id="form">
                                     <div class="fioandpasswordtext">
                                         <span>ФИО</span>
                                         <span>Пароль</span>
                                     </div>
                                     <div class="fioandpasswordblock">
-                                        <input class="block1" type="text">
-                                        <input  class="block1" type="password">
+                                        <input class="block1 " required type="text" pattern="^[А-Яа-яЁё\s]+$">
+                                        <input  class="block1 " id="blockpar" required type="password" pattern="^[a-zA-Z]+$+[0-9]">
                                     </div>
                                     <div class="loginandpasswordtext">
-                                        <span class="block2" >Логин</span>
-                                        <span class="block2">Повторите пароль</span>
+                                        <span class="block2 " >Логин</span>
+                                        <span class="block2 ">Повторите пароль</span>
                                     </div>
                                     <div class="loginandpasswordblock">
-                                        <input  class="block3" type="text">
-                                        <input class="block3" type="password">
+                                        <input  class="block3 " required type="text" pattern="^[a-zA-Z]+$+[0-9]">
+                                        <input class="block3 " id="blockpar2" required type="password" pattern="^[a-zA-Z]+$+[0-9]">
+                                        <p id="valid"></p>
                                     </div>
-                                    <div class="emailandapproval">
-                                        <span class="block4">Электронная почта</span>
+                                    <div class="emailandapproval tabs__reg">
+                                        <span class="block4 ">Электронная почта</span>
                                         <div class="checkboxandtext">
-                                            <input class="checkbox" type="checkbox">
-                                            <span class="approval">Согласие на обработку персональных данных</span>
+                                            <input id="checkbox" class="tabs__checkbox" type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+                                            <label class="tabs__lable" for="checkbox">Согласие на обработку персональных данных</label>
                                         </div>
                                     </div>
-                                    <div class="emailandregistration">
-                                        <input  class="email" type="email">
-                                        <button class="button1"><a href="./per_acc.html" style="color: black;"> Зарегистрироваться</a></button>
+                                    <div class="emailandregistration tabs__reg">
+                                        <input  class="email" required type="email">
+                                        <input type="submit" class="tabs__button1" disabled="disabled" name="submit" id="submit" value="Подписаться">
                                     </div> 
                                 </form>
                             </div>
@@ -119,5 +120,16 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        $(document).ready(function() {$("#p1, #p2").keyup(validate);});
+        function validate() 
+        {
+        var pass1 = $("#blockpar").val();
+        var pass2 = $("#blockpar2").val();
+        if (pass1 == pass2) {$("#valid").text("Пароли совпадают");
+        } else {$("#valid").text("Пароли не совпадают");}
+        }
+    </script>
 </body>
 </html>

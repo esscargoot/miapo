@@ -43,6 +43,7 @@
         </header>
 
         <div class="slider">
+            
                 <div class="slider__item">
                     <div class="slider__textosn">
                     <span> DANGO</span> - магазин 
@@ -96,9 +97,9 @@
                 </div>
         </div>
 
-        <form action="#">
         <div class="emailpod">
             <div class="container">
+                <form action="#">
                     <div class="emailpod__body">
                         <div class="emailpod__text">
                             Интересно следить за новинками? Подпишитесь на рассылку!
@@ -107,12 +108,18 @@
                             <input placeholder="ИМЯ" type="text">
                             <input placeholder="ПОЧТА" type="email" name="" id="">
                         </div>
-                        <button class="emailpod__button" >Подписаться</button>
+                        <div class="emailpod__chesub">
+                            <div class="emailpod__cb">
+                                <input id="checkbox" class="emailpod__checkbox" type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+                                <label class="emailpod__labletext" for="checkbox">Согласие на обработку персональных данных</label>
+                            </div>
+                            <input type="submit" class="emailpod__button" disabled="disabled" name="submit" id="submit" value="Подписаться">
+                        </div>
                     </div>
+                </form>
             </div>
         </div>
-        </form>
-        </div>
+    </div>
     </div>
     
 
@@ -140,7 +147,7 @@
     
     <!-- Подключение jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <!-- подключение дж слайдера -->
+    <!-- подключение слайдера slick -->
     <script src="js/slick.min.js"></script>
     <!-- осн дж -->
     <script src="js/script.js"></script>
