@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DANGO</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__body">
+                        <a href="./index.html" class="header__logo">
+                            <div class="header__textlogo">
+                             DANGO
+                            </div>
+                            <img src="./img/Иконки/данго.svg" alt="">
+                        </a>
+                        <nav class="header__menu">
+                            <ul class="header__list">
+                                <li>
+                                    <a href="./Product.html" class="header__link">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="./Contact.html" class="header__link">Контакты</a>
+                                </li>
+                            </ul>
+
+                            <a class="header__account" href="./reg.html">
+                                <img src="./img/Иконки/аватар.svg" alt="">
+                            </a>
+
+                            <div class="header__phone">
+                                <div class="header__text">+78005553535</div>
+                                <div id="popup"  class="popup" >
+                                    <div class="popup__body" >
+                                        <div class="popup__content" >
+                                            <a href="#" class="popup_close">X</a>
+                                            <div class="popup__title"> Введите ваш номер телефона:</div>
+                                                <div class="popup__phone" >
+                                                 <form action="#" class="input__phone"> 
+                                                    <input type="phone" placeholder="+7 (xxx)-xxx-xx-xx"> </input>
+                                                 </form>
+                                                 <div class="popup__down"> C вами свяжутся в течении 15-ти минут</div>
+                                                </div>
+                                                <a href="#" class="popup__phonezakaz">Заказать звонок</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#popup" class="header__phonezakaz">Заказать звонок</a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+                    <div class="tabs">
+                        <div class="tabs1">
+                        <nav class="tabs_items" >
+                            <a href="#tab_01"class="tabs_item"> Авторизация</a>
+                            <a href="#tab_02"class="tabs_item"> Регистрация</a>
+                        </nav>
+                        <div class="rectangle"></div>
+                        <div class="tabs_body">
+                            <div id="tab_01" class="tabs_block">
+                                <form name="myForm" action="./per_acc.html" onsubmit="return validateForm()" method="post">
+                                        <span class="text1">Электронная почта</span>
+                                        <input class="input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email">
+                                        <span class="text2">Пароль</span>
+                                        <input  class="input" type="password" name="password">
+                                        <span class="remind">Напомнить</span>
+                                        <input type="submit" value="Войти" class="button">
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                            <div id="tab_02" class="tabs_block">
+                                <form name="RegForm" action="./per_acc.html" id="form">
+                                    <div class="fioandpasswordtext">
+                                        <span>ФИО</span>
+                                        <span>Пароль</span>
+                                    </div>
+                                    <div class="fioandpasswordblock">
+                                        <input class="block1 " name="fio" required type="text" pattern="^[А-Яа-яЁё\s]+$+[-]" title="ФИО может состоять только из кирилических букв, пробелов и дифисов">
+                                        <input  class="block1 " name="Pwd" required type="password" pattern="^[a-zA-Z]+$+[0-9]" title="Пароль может состоять только из латинских букв и цифр">
+
+                                    </div>
+                                    <div class="loginandpasswordtext">
+                                        <span class="block2 " >Логин</span>
+                                        <span class="block2 ">Повторите пароль</span>
+                                    </div>
+                                    <div class="loginandpasswordblock">
+                                        <input  class="block3 " name="login" required type="text" pattern="^[a-zA-Z]+$+[0-9]" title="Логин может состоять только из латинских букв и цифр">
+                                        <input class="block3 " name="Pwd1" required type="password" pattern="^[a-zA-Z]+$+[0-9]" title="Пароль может состоять только из латинских букв и цифр">
+                                        <label name="labelAlert" for=""></label>
+                                    </div>
+                                    <div class="emailandapproval tabs__reg">
+                                        <span class="block4 ">Электронная почта</span>
+                                        <div class="checkboxandtext">
+                                            <input id="checkbox" class="tabs__checkbox" type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
+                                            <label class="tabs__lable" for="checkbox">Согласие на обработку персональных данных</label>
+                                        </div>
+                                    </div>
+                                    <div class="emailandregistration tabs__reg">
+                                        <input  class="email" name="email1" required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                        <input type="submit" onclick="Check()" class="tabs__button1" disabled="disabled" name="submit" id="submit" value="Регистрация">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                 </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+                    <a href="./index.html" class="footer__logo">
+                        <div class="header__textlogo">
+                            DANGO
+                        </div>
+                        <img src="./img/Иконки/данго.svg" alt="">
+                    </a>
+                    <div class="footer__tex ta">© All Right Reserved. 2022 <br>
+                        "Политика конфиденциальности"
+                    </div>
+
+                    <div class="footer__phone">
+                        <div class="footer__text">+78005553535</div>
+                        <div id="popup"  class="popup" >
+                            <div class="popup__body" >
+                                <div class="popup__content" >
+                                    <a href="#" class="popup_close">X</a>
+                                    <div class="popup__title"> Введите ваш номер телефона:</div>
+                                        <div class="popup__phone" >
+                                         <form action="#" class="input__phone"> 
+                                            <input type="phone" placeholder="+7 (xxx)-xxx-xx-xx"> </input>
+                                         </form>
+                                         <div class="popup__down"> C вами свяжутся в течении 15-ти минут</div>
+                                        </div>
+                                        <a href="#" class="popup__phonezakaz">Заказать звонок</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#popup" class="footer__phonezakaz">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Для авторизации -->
+    <script type="text/javascript">
+        function validateForm()
+        {
+        var x=document.forms["myForm"]["email"].value;
+        if (x==null || x=="")
+          {
+          alert("Необходимо заполнить поле email!");
+          return false;
+          }
+          var x=document.forms["myForm"]["password"].value;
+          if (x==null || x=="")
+            {
+            alert("Необходимо заполнить поле пароля!");
+            return false;
+            }
+        }
+        </script>
+
+    <!--Для рагистрации -->
+    <script type="text/javascript">
+        function Check()
+        {   
+            if(!document.RegForm.fio.value ){
+                alert("Заполните поле ФИО");
+                return false;
+            }
+            if(!document.RegForm.Pwd.value){
+                alert("Заполните поле Пароль");
+                return false;
+            }
+            if(!document.RegForm.login.value){
+                alert("Заполните поле Логин");
+                return false;
+            }
+            if(!document.RegForm.Pwd1.value){
+                alert("Заполните поле Повтоирте пароль");
+                return false;
+            }
+            if(!document.RegForm.email1.value){
+                alert("Заполните поле Электронная почта");
+                return false;
+            }
+            if(document.RegForm.Pwd.value==document.RegForm.Pwd1.value)
+            {
+                alert("Вас зарегистрировали");
+                return true;
+            }
+            else
+            {
+                alert("Пароли не сопвадают");
+                window.history.back();
+                return false;
+            }
+    }
+    </script>
+</body>
+</html>
